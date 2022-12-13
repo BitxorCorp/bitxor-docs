@@ -1,0 +1,85 @@
+<table style="width: 100%;"><tr><td>
+    <div class="side-info"><table>
+    <tr><td class="side-info-icon">&varr;</td><td>Size: 2 bytes = 0x2</td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/blob/main/catbuffer/schemas/bitxor/transaction_type.cats#L2">schema</a></td></tr>
+    </table></div>
+<p>Enumeration of <a href="/serialization#transaction" title="binary layout for a transaction">Transaction</a> types </p>
+</td></tr></table>
+
+<div class="big-table3">
+<div><b>0x414c</b></div>
+<div><code class="docutils literal">ACCOUNT_KEY_LINK</code></div>
+<div class="description"><p><a href="/serialization#accountkeylinktransaction" title="This transaction is required for all accounts wanting to activate remote or delegated harvesting.">AccountKeyLinkTransaction</a> </p></div>
+<div><b>0x424c</b></div>
+<div><code class="docutils literal">NODE_KEY_LINK</code></div>
+<div class="description"><p><a href="/serialization#nodekeylinktransaction" title="This transaction is required for all accounts willing to activate delegated harvesting.">NodeKeyLinkTransaction</a> </p></div>
+<div><b>0x4141</b></div>
+<div><code class="docutils literal">AGGREGATE_COMPLETE</code></div>
+<div class="description"><p><a href="/serialization#aggregatecompletetransaction" title="Send transactions in batches to different accounts.">AggregateCompleteTransaction</a> </p></div>
+<div><b>0x4241</b></div>
+<div><code class="docutils literal">AGGREGATE_BONDED</code></div>
+<div class="description"><p><a href="/serialization#aggregatebondedtransaction" title="Propose an arrangement of transactions between different accounts.">AggregateBondedTransaction</a> </p></div>
+<div><b>0x4143</b></div>
+<div><code class="docutils literal">VOTING_KEY_LINK</code></div>
+<div class="description"><p><a href="/serialization#votingkeylinktransaction" title="Link an account with a BLS public key required for finalization voting.">VotingKeyLinkTransaction</a> </p></div>
+<div><b>0x4243</b></div>
+<div><code class="docutils literal">VRF_KEY_LINK</code></div>
+<div class="description"><p><a href="/serialization#vrfkeylinktransaction" title="Link an account with a VRF public key required for harvesting.">VrfKeyLinkTransaction</a> </p></div>
+<div><b>0x4148</b></div>
+<div><code class="docutils literal">HASH_LOCK</code></div>
+<div class="description"><p><a href="/serialization#hashlocktransaction" title="Lock a deposit needed to announce an AggregateBondedTransaction.">HashLockTransaction</a> </p></div>
+<div><b>0x4152</b></div>
+<div><code class="docutils literal">SECRET_LOCK</code></div>
+<div class="description"><p><a href="/serialization#secretlocktransaction" title="Start a token swap between different chains.">SecretLockTransaction</a> </p></div>
+<div><b>0x4252</b></div>
+<div><code class="docutils literal">SECRET_PROOF</code></div>
+<div class="description"><p><a href="/serialization#secretprooftransaction" title="Conclude a token swap between different chains.">SecretProofTransaction</a> </p></div>
+<div><b>0x4144</b></div>
+<div><code class="docutils literal">ACCOUNT_METADATA</code></div>
+<div class="description"><p><a href="/serialization#accountmetadatatransaction" title="Associate a key-value state (metadata) to an account.">AccountMetadataTransaction</a> </p></div>
+<div><b>0x4244</b></div>
+<div><code class="docutils literal">TOKEN_METADATA</code></div>
+<div class="description"><p><a href="/serialization#tokenmetadatatransaction" title="Associate a key-value state (metadata) to a token.">TokenMetadataTransaction</a> </p></div>
+<div><b>0x4344</b></div>
+<div><code class="docutils literal">NAMESPACE_METADATA</code></div>
+<div class="description"><p><a href="/serialization#namespacemetadatatransaction" title="Associate a key-value state (metadata) to a namespace.">NamespaceMetadataTransaction</a> </p></div>
+<div><b>0x414d</b></div>
+<div><code class="docutils literal">TOKEN_DEFINITION</code></div>
+<div class="description"><p><a href="/serialization#tokendefinitiontransaction" title="Create a new  token.">TokenDefinitionTransaction</a> </p></div>
+<div><b>0x424d</b></div>
+<div><code class="docutils literal">TOKEN_SUPPLY_CHANGE</code></div>
+<div class="description"><p><a href="/serialization#tokensupplychangetransaction" title="Change the total supply of a token.">TokenSupplyChangeTransaction</a> </p></div>
+<div><b>0x434d</b></div>
+<div><code class="docutils literal">TOKEN_SUPPLY_REVOCATION</code></div>
+<div class="description"><p><a href="/serialization#tokensupplyrevocationtransaction" title="Revoke token.">TokenSupplyRevocationTransaction</a> </p></div>
+<div><b>0x4155</b></div>
+<div><code class="docutils literal">MULTISIG_ACCOUNT_MODIFICATION</code></div>
+<div class="description"><p><a href="/serialization#multisigaccountmodificationtransaction" title="Create or modify a multi-signature account.">MultisigAccountModificationTransaction</a> </p></div>
+<div><b>0x424e</b></div>
+<div><code class="docutils literal">ADDRESS_ALIAS</code></div>
+<div class="description"><p><a href="/serialization#addressaliastransaction" title="Attach or detach a namespace (alias) to an account address..">AddressAliasTransaction</a> </p></div>
+<div><b>0x434e</b></div>
+<div><code class="docutils literal">TOKEN_ALIAS</code></div>
+<div class="description"><p><a href="/serialization#tokenaliastransaction" title="Attach or detach a namespace to a Token.">TokenAliasTransaction</a> </p></div>
+<div><b>0x414e</b></div>
+<div><code class="docutils literal">NAMESPACE_REGISTRATION</code></div>
+<div class="description"><p><a href="/serialization#namespaceregistrationtransaction" title="Register (or renew a registration for) a namespace.">NamespaceRegistrationTransaction</a> </p></div>
+<div><b>0x4150</b></div>
+<div><code class="docutils literal">ACCOUNT_ADDRESS_RESTRICTION</code></div>
+<div class="description"><p><a href="/serialization#accountaddressrestrictiontransaction" title="Allow or block incoming and outgoing transactions for a given a set of addresses.">AccountAddressRestrictionTransaction</a> </p></div>
+<div><b>0x4250</b></div>
+<div><code class="docutils literal">ACCOUNT_TOKEN_RESTRICTION</code></div>
+<div class="description"><p><a href="/serialization#accounttokenrestrictiontransaction" title="Allow or block incoming transactions containing a given set of tokens.">AccountTokenRestrictionTransaction</a> </p></div>
+<div><b>0x4350</b></div>
+<div><code class="docutils literal">ACCOUNT_OPERATION_RESTRICTION</code></div>
+<div class="description"><p><a href="/serialization#accountoperationrestrictiontransaction" title="Allow or block outgoing transactions depending on their transaction type.">AccountOperationRestrictionTransaction</a> </p></div>
+<div><b>0x4251</b></div>
+<div><code class="docutils literal">TOKEN_ADDRESS_RESTRICTION</code></div>
+<div class="description"><p><a href="/serialization#tokenaddressrestrictiontransaction" title="Set address specific rules to transfer a restrictable token.">TokenAddressRestrictionTransaction</a> </p></div>
+<div><b>0x4151</b></div>
+<div><code class="docutils literal">TOKEN_GLOBAL_RESTRICTION</code></div>
+<div class="description"><p><a href="/serialization#tokenglobalrestrictiontransaction" title="Set global rules to transfer a restrictable token.">TokenGlobalRestrictionTransaction</a> </p></div>
+<div><b>0x4154</b></div>
+<div><code class="docutils literal">TRANSFER</code></div>
+<div class="description"><p><a href="/serialization#transfertransaction" title="Send tokens and messages between two accounts.">TransferTransaction</a> </p></div>
+</div>

@@ -1,0 +1,8 @@
+<div class="language-selector">
+    {% if language|trim("'") == 'es' %}
+    <a href="/{{ pagename }}.html"><img src="/_static/images/white-globe.png" width="24px" height="24px" title="English version" /></a>
+    <img class="language-icon-selected" src="/_static/images/spanish-icon.png" width="24px" height="24px" title="Spanish version" /> {% else %}
+    <img class="language-icon-selected" src="/_static/images/white-globe.png" width="24px" height="24px" title="English version" />
+    <a href="/ja/{{ pagename }}.html"><img src="/_static/images/spanish-icon.png" width="24px" height="24px" title="Spanish version" /></a>
+    {% endif %}
+</div>

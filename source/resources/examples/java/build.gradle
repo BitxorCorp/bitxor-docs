@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'net.saliman.properties' version '1.5.2'
+}
+
+apply plugin: 'java'
+group 'io.bxr'
+version '0.20.4-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+ext {
+    junitVersion = "5.9.1"
+}
+
+dependencies {
+
+    compile "io.bxr:bitxor-sdk-vertx-client:${project.version}"
+
+    // Tests
+    testCompile 'org.slf4j:slf4j-simple:2.0.2'
+    testCompile "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testCompile "org.junit.jupiter:junit-jupiter-params:${junitVersion}"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

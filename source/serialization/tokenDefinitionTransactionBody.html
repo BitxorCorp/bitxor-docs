@@ -1,0 +1,45 @@
+<table style="width: 100%;"><tr><td>
+    <div class="side-info"><table>
+    <tr><td class="side-info-icon">&varr;</td><td>Size: 22 bytes = 0x16</td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/blob/main/catbuffer/schemas/bitxor/token/token_definition.cats#L5">schema</a></td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/bitxorcore/tree/main/plugins/txes/token/src/model/TokenDefinitionTransaction.h#L34">bitxorcore model</a></td></tr>
+    </table></div>
+<p>Shared content between <a href="/serialization#tokendefinitiontransaction" title="Create a new  token.">TokenDefinitionTransaction</a> and Embedded <a href="/serialization#tokendefinitiontransaction" title="Create a new  token.">TokenDefinitionTransaction</a>. </p>
+</td></tr></table>
+
+<div class="big-table6">
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">id</code></div>
+   <div><a href="/serialization#tokenid" title="A Token identifier.">TokenId</a></div>
+   <div class="description"><p>Unique token identifier obtained from the generator account's public key and the <code class="docutils literal">nonce</code>. <br/>The SDK's can take care of generating this ID for you. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">duration</code></div>
+   <div><a href="/serialization#blockduration" title="A time lapse, expressed in number of blocks.">BlockDuration</a></div>
+   <div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> duration expressed in blocks. If set to 0, the token never expires. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">nonce</code></div>
+   <div><a href="/serialization#tokennonce" title="">TokenNonce</a></div>
+   <div class="description"><p>Random nonce used to generate the token id. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">flags</code></div>
+   <div><a href="/serialization#tokenflags" title="Enumeration of token property flags.">TokenFlags</a></div>
+   <div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> flags. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">divisibility</code></div>
+   <div>byte[1]</div>
+   <div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> divisibility. </p></div>
+</div>
+<details><summary>Included in:</summary><div class="tabulated-list"><div>
+<a href="/serialization#tokendefinitiontransaction" title="Create a new  token.">TokenDefinitionTransaction</a></div><div><a href="/serialization#embeddedtokendefinitiontransaction" title="Embedded version of TokenDefinitionTransaction.">EmbeddedTokenDefinitionTransaction</a>
+</div></div></details>
+

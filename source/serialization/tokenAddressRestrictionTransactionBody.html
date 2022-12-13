@@ -1,0 +1,45 @@
+<table style="width: 100%;"><tr><td>
+    <div class="side-info"><table>
+    <tr><td class="side-info-icon">&varr;</td><td>Size: 56 bytes = 0x38</td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/blob/main/catbuffer/schemas/bitxor/restriction_token/token_address_restriction.cats#L4">schema</a></td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/bitxorcore/tree/main/plugins/txes/restriction_token/src/model/TokenAddressRestrictionTransaction.h#L32">bitxorcore model</a></td></tr>
+    </table></div>
+<p>Shared content between <a href="/serialization#tokenaddressrestrictiontransaction" title="Set address specific rules to transfer a restrictable token.">TokenAddressRestrictionTransaction</a> and <a href="/serialization#embeddedtokenaddressrestrictiontransaction" title="Embedded version of TokenAddressRestrictionTransaction.">EmbeddedTokenAddressRestrictionTransaction</a>. </p>
+</td></tr></table>
+
+<div class="big-table6">
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">token_id</code></div>
+   <div><a href="/serialization#unresolvedtokenid" title="Either a TokenId or a NamespaceId.">UnresolvedTokenId</a></div>
+   <div class="description"><p>Identifier of the token to which the restriction applies. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">restriction_key</code></div>
+   <div>byte[8]</div>
+   <div class="description"><p>Restriction key. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">previous_restriction_value</code></div>
+   <div>byte[8]</div>
+   <div class="description"><p>Previous restriction value. Set <code class="docutils literal">previousRestrictionValue</code> to <code class="docutils literal">FFFFFFFFFFFFFFFF</code> if the target address does not have a previous restriction value for this token id and restriction key. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">new_restriction_value</code></div>
+   <div>byte[8]</div>
+   <div class="description"><p>New restriction value. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">target_address</code></div>
+   <div><a href="/serialization#unresolvedaddress" title="Either an Address or a NamespaceId.">UnresolvedAddress</a></div>
+   <div class="description"><p><a href="/serialization#address" title="An address identifies an account and is derived from its PublicKey.">Address</a> being restricted. </p></div>
+</div>
+<details><summary>Included in:</summary><div class="tabulated-list"><div>
+<a href="/serialization#tokenaddressrestrictiontransaction" title="Set address specific rules to transfer a restrictable token.">TokenAddressRestrictionTransaction</a></div><div><a href="/serialization#embeddedtokenaddressrestrictiontransaction" title="Embedded version of TokenAddressRestrictionTransaction.">EmbeddedTokenAddressRestrictionTransaction</a>
+</div></div></details>
+

@@ -1,0 +1,4 @@
+rootProject.name = 'bitxor-sdk-examples'
+include 'crypto'
+include 'buffers'
+

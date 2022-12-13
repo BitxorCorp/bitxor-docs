@@ -1,0 +1,57 @@
+<table style="width: 100%;"><tr><td>
+    <div class="side-info"><table>
+    <tr><td class="side-info-icon">&varr;</td><td>Size: 42 bytes = 0x2a</td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/blob/main/catbuffer/schemas/bitxor/restriction_token/token_global_restriction.cats#L5">schema</a></td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/bitxorcore/tree/main/plugins/txes/restriction_token/src/model/TokenGlobalRestrictionTransaction.h#L33">bitxorcore model</a></td></tr>
+    </table></div>
+<p>Shared content between <a href="/serialization#tokenglobalrestrictiontransaction" title="Set global rules to transfer a restrictable token.">TokenGlobalRestrictionTransaction</a> and <a href="/serialization#embeddedtokenglobalrestrictiontransaction" title="Embedded version of TokenGlobalRestrictionTransaction.">EmbeddedTokenGlobalRestrictionTransaction</a>. </p>
+</td></tr></table>
+
+<div class="big-table6">
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">token_id</code></div>
+   <div><a href="/serialization#unresolvedtokenid" title="Either a TokenId or a NamespaceId.">UnresolvedTokenId</a></div>
+   <div class="description"><p>Identifier of the token being restricted. The token creator must be the signer of the transaction. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">reference_token_id</code></div>
+   <div><a href="/serialization#unresolvedtokenid" title="Either a TokenId or a NamespaceId.">UnresolvedTokenId</a></div>
+   <div class="description"><p>Identifier of the token providing the restriction key. The token global restriction for the token identifier depends on global restrictions set on the reference token. Set <code class="docutils literal">reference_token_id</code> to <strong>0</strong> if the token giving the restriction equals the <code class="docutils literal">token_id</code>. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">restriction_key</code></div>
+   <div>byte[8]</div>
+   <div class="description"><p>Restriction key relative to the reference token identifier. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">previous_restriction_value</code></div>
+   <div>byte[8]</div>
+   <div class="description"><p>Previous restriction value. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">new_restriction_value</code></div>
+   <div>byte[8]</div>
+   <div class="description"><p>New restriction value. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">previous_restriction_type</code></div>
+   <div><a href="/serialization#tokenrestrictiontype" title="Enumeration of token restriction types.">TokenRestrictionType</a></div>
+   <div class="description"><p>Previous restriction type. </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">new_restriction_type</code></div>
+   <div><a href="/serialization#tokenrestrictiontype" title="Enumeration of token restriction types.">TokenRestrictionType</a></div>
+   <div class="description"><p>New restriction type. </p></div>
+</div>
+<details><summary>Included in:</summary><div class="tabulated-list"><div>
+<a href="/serialization#tokenglobalrestrictiontransaction" title="Set global rules to transfer a restrictable token.">TokenGlobalRestrictionTransaction</a></div><div><a href="/serialization#embeddedtokenglobalrestrictiontransaction" title="Embedded version of TokenGlobalRestrictionTransaction.">EmbeddedTokenGlobalRestrictionTransaction</a>
+</div></div></details>
+

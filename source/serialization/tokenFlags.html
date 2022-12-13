@@ -1,0 +1,26 @@
+<table style="width: 100%;"><tr><td>
+    <div class="side-info"><table>
+    <tr><td class="side-info-icon">&varr;</td><td>Size: 1 byte = 0x1</td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/blob/main/catbuffer/schemas/bitxor/token/token_types.cats#L4">schema</a></td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/bitxorcore/tree/main/plugins/txes/token/src/model/TokenFlags.h#L29">bitxorcore model</a></td></tr>
+    </table></div>
+<p>Enumeration of token property flags. </p>
+</td></tr></table>
+
+<div class="big-table3">
+<div><b>0x0</b></div>
+<div><code class="docutils literal">NONE</code></div>
+<div class="description"><p>No flags present. </p></div>
+<div><b>0x1</b></div>
+<div><code class="docutils literal">SUPPLY_MUTABLE</code></div>
+<div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> supports supply changes through a <a href="/serialization#tokensupplychangetransaction" title="Change the total supply of a token.">TokenSupplyChangeTransaction</a> even when token creator only owns a partial supply. <br/>If the token creator owns the totality of the supply, it can be changed even if this flag is not set. </p></div>
+<div><b>0x2</b></div>
+<div><code class="docutils literal">TRANSFERABLE</code></div>
+<div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> supports <a href="/serialization#transfertransaction" title="Send tokens and messages between two accounts.">TransferTransaction</a> between arbitrary accounts. When not set, this token can only be transferred to or from the token creator. </p></div>
+<div><b>0x4</b></div>
+<div><code class="docutils literal">RESTRICTABLE</code></div>
+<div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> supports custom restrictions configured by the token creator. <br/>See <a href="/serialization#tokenaddressrestrictiontransaction" title="Set address specific rules to transfer a restrictable token.">TokenAddressRestrictionTransaction</a> and <a href="/serialization#tokenglobalrestrictiontransaction" title="Set global rules to transfer a restrictable token.">TokenGlobalRestrictionTransaction</a>. </p></div>
+<div><b>0x8</b></div>
+<div><code class="docutils literal">REVOKABLE</code></div>
+<div class="description"><p><a href="/serialization#token" title="A quantity of a certain token.">Token</a> supports revocation of tokens by the token creator. </p></div>
+</div>

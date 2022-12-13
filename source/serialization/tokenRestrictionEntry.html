@@ -1,0 +1,35 @@
+<table style="width: 100%;"><tr><td>
+    <div class="side-info"><table>
+    <tr><td class="side-info-icon">&varr;</td><td>Size: 45+ bytes = 0x2d+ <i>(variable)</i></td></tr>
+    <tr><td class="side-info-icon"><i class="fab fa-github"></i></td><td><a href="https://github.com/bitxorcorp/blob/main/catbuffer/schemas/bitxor/state/restriction_token_entry.cats#L24">schema</a></td></tr>
+    </table></div>
+<p>binary layout for a token restriction </p>
+</td></tr></table>
+
+<div class="big-table6">
+   <div style="grid-column: 1 / span 6;" class="big-table-section"><a href="/serialization#stateheader" title="header common to all serialized states">StateHeader</a><span style="float:right">2 bytes = 0x2</span></div>
+   <div class="indentation-cell">&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">version</code></div>
+   <div>byte[2]</div>
+   <div class="description"><p>serialization version </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">entry_type</code></div>
+   <div><a href="/serialization#tokenrestrictionentrytype" title="type of token restriction entry">TokenRestrictionEntryType</a></div>
+   <div class="description"><p>type of restriction being placed upon the entity </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">address_entry</code></div>
+   <div><a href="/serialization#tokenaddressrestrictionentry" title="binary layout for a token restriction">TokenAddressRestrictionEntry</a></div>
+   <div class="description"><p>address restriction rule </p></div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div>&nbsp;</div>
+   <div><code class="docutils literal">global_entry</code></div>
+   <div><a href="/serialization#tokenglobalrestrictionentry" title="binary layout for a token restriction">TokenGlobalRestrictionEntry</a></div>
+   <div class="description"><p>global token rule </p></div>
+</div>

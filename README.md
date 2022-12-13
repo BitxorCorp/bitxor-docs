@@ -27,7 +27,7 @@ Learn how to use the software development kits and tools with the following step
 
 * [How to create an account](https://docs.bitxor.org/en/guides/account/creating-an-account.html)
 * [How to send a transaction](https://docs.bitxor.org/en/guides/transfer/sending-a-transfer-transaction.html)
-* [How to create a mosaic](https://docs.bitxor.org/en/guides/mosaic/creating-a-mosaic.html)
+* [How to create a token](https://docs.bitxor.org/en/guides/token/creating-a-token.html)
 * [How to register a namespace](https://docs.bitxor.org/en/guides/namespace/registering-a-namespace.html)
 * [How to create a multisig account](https://docs.bitxor.org/en/guides/multisig/creating-a-multisig-account.html)
 * [How to run a private test network](https://docs.bitxor.org/en/guides/network/creating-a-private-test-net.html)

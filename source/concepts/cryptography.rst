@@ -64,9 +64,9 @@ Address
 
 First, a **24-byte** **raw address** is built, consisting of:
 
-* A network-id byte.
+* A network-id (2 byte).
 * A 160-bit (20 byte) hash of the account's public key.
-* A 3-byte checksum, to allow the quick recognition of mistyped addresses.
+* A 2-byte checksum, to allow the quick recognition of mistyped addresses.
 
 However, the raw address is inconvenient to use because it is a binary array, so it is typically `Base32-encoded <https://en.wikipedia.org/wiki/Base32>`__ into a **39-character** text string called an **encoded address**, or simply an **adress**.
 

@@ -78,7 +78,7 @@ Examples:
    :widths: 20 65 15
    :delim: ;
 
-   Raw address; ``0x78,0xD0,0x44,0xED,0xC3,0xDC,0x8B,0x86...``; 24 bytes
+   Raw address; ``0x20,0xD0,0x44,0xED,0xC3,0xDC,0x8B,0x86...``; 24 bytes
    Address; ``PDIEJ3OD3SFYNZCQUSEWKY4NRRZUI5LMJPSVLPQ``; 39 chars
    Pretty address; ``PDIEJ3-OD3SFY-NZCQUS-EWKY4N-RRZUI5-LMJPSV-LPQ``; 45 chars
 

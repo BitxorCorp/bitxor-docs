@@ -79,8 +79,8 @@ Examples:
    :delim: ;
 
    Raw address; ``0x20,0xD0,0x44,0xED,0xC3,0xDC,0x8B,0x86...``; 24 bytes
-   Address; ``PDIEJ3OD3SFYNZCQUSEWKY4NRRZUI5LMJPSVLPQ``; 39 chars
-   Pretty address; ``PDIEJ3-OD3SFY-NZCQUS-EWKY4N-RRZUI5-LMJPSV-LPQ``; 45 chars
+   Address; ``BXREJ3OD3SFYNZCQUSEWKY4NRRZUI5LMJPSVLPQ``; 39 chars
+   Pretty address; ``BXREJ3-OD3SFY-NZCQUS-EWKY4N-RRZUI5-LMJPSV-LPQ``; 45 chars
 
 It is possible to create an address without interacting with the blockchain. In fact, the blockchain only tracks addresses and public keys when they first appear in a transaction.
 

@@ -26,15 +26,19 @@ The last height determines the amount of inflation per block that will be create
 
     starting-at-height-1 = 0
     starting-at-height-2 = 300000000
-    starting-at-height-213333333 = 200000000
+    starting-at-height-213333333 = 700000000
     starting-at-height-213333334 = 0
 
 
 The previous configuration example inflates 0 currency tokens per block from height 1 until the next ``starting-at-height-entry``.
-Between the blocks 2 and 213333333, the currency token supply increases by 3 bxr units per block.
+Between the blocks 2 and 213333332, the currency token supply increases by 3 bxr units per block.
+Between the blocks 213333333 and 213333334, the currency token supply increases by 7 bxr units per block.
 Starting at height 213333334, new blocks will not trigger the creation of tokens.
 
 The `network configuration <https://github.com/bitxorcorp/bitxorcore/tree/main/resources/config-network.properties>`_ also describes the initial and **maximum supply** of the native currency token and new tokens. The maximum supply takes into account the inflation generated per-block.
+
+.. code-block:: bash
+    Based on the current inflation + the initial supply, the maximum supply is 160000000 + 640000000 = 800000000 BXR
 
 .. code-block:: bash
 

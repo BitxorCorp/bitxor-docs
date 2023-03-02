@@ -38,8 +38,9 @@ Starting at height 213333334, new blocks will not trigger the creation of tokens
 The `network configuration <https://github.com/bitxorcorp/bitxorcore/tree/main/resources/config-network.properties>`_ also describes the initial and **maximum supply** of the native currency token and new tokens. The maximum supply takes into account the inflation generated per-block.
 
 .. code-block:: bash
-    
-    Based on the current inflation + the initial supply, the maximum supply is 160000000 + 640000000 = 800000000 BXR
+
+    Based on the current inflation + the initial supply, 
+    The maximum supply is 160000000 + 640000000 = 800000000 BXR
 
 .. code-block:: bash
 

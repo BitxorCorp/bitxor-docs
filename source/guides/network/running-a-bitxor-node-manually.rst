@@ -287,6 +287,7 @@ For follow in live time the process of BitxorCore
    journalctl -f -u bitxorbroker.service
 
 For autoboot BitxorCore with the system
+
 .. code-block:: bitxor-bootstrap
 
    systemctl enable bitxorbroker
@@ -346,7 +347,7 @@ now put in variable 'harvesterSigningPrivateKey' a private key obtained in the s
 and put in variable 'harvesterVrfPrivateKey' the other private key obtained in the step 1
 change the value of variable 'enableAutoHarvesting' to 'true'
 in variable 'beneficiaryAddress' put your wallet where your will receive the percentage of node when this found a block.
-now save, for save press `control + x` and after `Y` and press `enter`
+now save, for save press ``control + x`` and after ``Y`` and press ``enter``
 3. Enable Harvesting 
 
 .. code-block:: bitxor-bootstrap
@@ -354,10 +355,96 @@ now save, for save press `control + x` and after `Y` and press `enter`
    nano /root/BitxorCore/resources/config-extensions-server.properties
    
 change the variable 'extension.harvesting' to 'true'
-now save, for save press `control + x` and after `Y` and press `enter`
+now save, for save press ``control + x`` and after ``Y`` and press ``enter``
 
 4. Restart BitxorCore
 
+#########################
+Enable Voting Node
+#########################
+
+********************************************
+Node voting for the first time 
+********************************************
+
+1. First your must have in your wallet for Voting the minimum amount of BXR for voting program.
+
+2. You will need create a voting private key in your node
+
+.. code-block:: bitxor-bootstrap
+
+   cd /root/BitxorCore/bin
+   ./bitxorcore.tools.votingkey -b 3101 -e 6210 -o private_key_tree1.dat
+   mkdir ../votingkeys
+   cp -f private_key_tree1.dat ../votingkeys/private_key_tree1.dat
+
+Copy your public key this will used for create the link voting key transaction.
+Depending of the epoch which you stay, you will must change the options -b 3101 for the initial epoch and -e 6210 for the ending epoch
+The maximum epoch range is 3110 blocks
+
+3. You will need add the role of voting in your configuration of the node
+
+.. code-block:: bitxor-bootstrap
+
+   nano ../resources/config-node.properties
+
+add the next text ``,Voting`` at the last character of the variable ``roles``
+
+4. You must also enable finalization extension 
+
+.. code-block:: bitxor-bootstrap
+
+   nano ../resources/config-finalization.properties 
+
+the configuration must be same to this configuration
+
+.. code-block:: bitxor-bootstrap
+
+   [finalization]
+
+   enableVoting = true
+   enableRevoteOnBoot = true
+
+   size = 10'000
+   threshold = 6'700
+   stepDuration = 2m
+
+   shortLivedCacheMessageDuration = 10m
+   messageSynchronizationMaxResponseSize = 20MB
+
+   maxHashesPerPoint = 512
+   prevoteBlocksMultiple = 4
+
+   unfinalizedBlocksDuration = 0m
+
+   treasuryReissuanceEpoch = 0
+
+You can copy all the configuration and replace in the configuration shown in your node.
+
+5. You need create a link voting key from your wallet voting, this can be completed via the SDK or the Bitxor Wallet Desktop
+
+********************************************
+Voting node renewing voting key
+********************************************
+
+1. You will need create a new voting private key in your node
+
+.. code-block:: bitxor-bootstrap
+
+   cd /root/BitxorCore/bin
+   ./bitxorcore.tools.votingkey -b 3101 -e 6210 -o private_key_tree2.dat
+   mkdir ../votingkeys
+   cp -f private_key_tree2.dat ../votingkeys/private_key_tree2.dat
+
+Copy your public key this will used for create the link voting key transaction.
+Depending of the epoch which you stay, you will must change the options -b 3101 for the initial epoch and -e 6210 for the ending epoch
+
+The maximum epoch range is 3110 blocks.
+
+Only if you using private_key_tree2.dat at the moment of crating the new private key and you have the Voting Public Key 1 expired
+you will can use the name private_key_tree1.dat, also will can replace the voting public key 1 with obtained before.
+
+2. You will need use the SDK or Bitxor Wallet for create the link voting key transaction.
 
 
 **********
